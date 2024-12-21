@@ -1,0 +1,16 @@
+
+@font-face{
+    font-family: "BankSans";
+    src: url('/public/Fonts/banksans.otf') format('opentype');
+}
+#bottom-text{
+font-family: "BankSans";
+
+}
+@media screen and (max-height:900px){
+    #vid-tabs{
+        display: flex;
+        width: 50vw;
+        justify-content: space-around;
+    }
+}

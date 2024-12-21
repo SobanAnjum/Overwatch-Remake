@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  overflow-x: hidden;
+}
+@layer utilities{
+
+  .mask-clip-path {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .nav-entry{
+    color: black;
+    font-size: larger;
+    width: 120px;
+    text-align: center;
+    font-weight: 400;
+    font-family:'banksans' ;
+    margin:0.3em 1em;
+    padding:0.2em 0.2em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+
+  }
+  .nav-entry:hover{
+    scale: 1.2;
+
+  }
+}
+@font-face{
+  font-family: 'banksans';
+  src: url('/public/Fonts/banksans.otf') format('opentype');
+}

@@ -1,0 +1,21 @@
+#outer-box{
+    clip-path: polygon(0 57%, 23% 34%, 100% 35%, 100% 84%, 86% 100%, 0 100%);
+    width: 8em;
+    height: 8em;
+    position: relative;
+
+}
+#inner-box{
+    clip-path: polygon(0 57%, 23% 34%, 100% 35%, 100% 84%, 86% 100%, 0 100%);
+    width: 7.5em;
+    height: 7.5em;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+@media screen {
+    
+}

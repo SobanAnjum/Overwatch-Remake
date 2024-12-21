@@ -1,0 +1,14 @@
+#image img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: rgb(53, 53, 53);
+    border: 3px rgb(56, 56, 56) solid;
+    transition: all 0.51s ease; /* Corrected transition syntax */
+}
+
+#image .isActive {
+    border: 3px rgb(0, 89, 255) solid;
+    transform: scale(1.2); /* Apply scale inside transform */
+    /* Corrected transition syntax */
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+
+#section-body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(24,24,24);
+
+}
+#characters{
+    height: 80%;
+    width: 100%;
+    /* background: linear-gradient(0deg, rgba(24,24,24,1) 0%, rgba(1,13,65,1) 100%); */
+    background-color: rgb(26, 26, 26);
+    background-image: url('/public/Images/Background-2.jpg');
+    
+
+}
+#discription{
+    height: 20%;
+    width: 100%;
+    text-align: center;
+
+}
+#text ul li{
+    font-size: 8rem;
+    color: white;
+    font-family: banksans;
+    font-weight: bolder;
+    text-align: center;
+    margin:20px 80px;
+    padding: 0;
+}
+#text ul{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    transform: translate(-30%, -10%);
+}
+#Player-header{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    font-family: "Tulpen One", serif;
+    font-weight: 700;
+    font-size: 17em;
+}
+#Player-Discription{
+    color: white;
+    font-family: 'banksans';
+    font-weight: 700;
+    font-style: bold;
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+}
