@@ -10,7 +10,7 @@ const CharacterSection = ({
 }) => {
 
 const [currentHero, setcurrentHero] = useState(0)
-const [Color, setColor] = useState('lime-500')
+const [Color, setColor] = useState('text-lime-500')
 const titleref= useRef()
 
 const Heros=[
@@ -104,7 +104,7 @@ return (
         <div className="icon1 absolute right-64 top-5 cursor-pointer " 
         onClick={()=>{
             setcurrentHero(0)
-            setColor('lime-500')
+            setColor('text-lime-500')
 
 
         }}>
@@ -113,14 +113,14 @@ return (
         <div className="icon2 absolute right-32 top-32 cursor-pointer"
         onClick={()=>{
             setcurrentHero(1)
-            setColor('blue-400')
+            setColor('text-blue-400')
             }}>
 
     <PlayerIcon index={2} isActive={currentHero==1}/>
         </div>
         <div className="icon3 absolute right-10 top-64 cursor-pointer" onClick={()=>{
             setcurrentHero(2)
-            setColor('purple-700')
+            setColor('text-purple-700')
             }}>
 
 
@@ -128,7 +128,7 @@ return (
         </div>
         <div className="icon4 absolute right-32 top-[24rem] cursor-pointer" onClick={()=>{
             setcurrentHero(3)
-            setColor('white')
+            setColor('text-white')
             }}>
 
 
@@ -136,7 +136,7 @@ return (
         </div>
         <div className="icon5 absolute right-64 top-[32rem] cursor-pointer" onClick={()=>{
             setcurrentHero(4)
-            setColor('blue-700')
+            setColor('text-blue-700')
             }}>
 
 
@@ -147,14 +147,13 @@ return (
         <img  className=" player-image absolute bottom-0 h-[80%]" src={`/public/Images/Hero-${currentHero+1}.png`} alt="" />
     </div>
     <div id="player-name" >
-        <h1 id="Player-header" className={`text-${Color} `}>{getName(currentHero)}</h1>
+        <h1 id="Player-header" className={`${Color} `}>{getName(currentHero)}</h1>
         <p id="Player-Discription">{`${Heros[currentHero+1].description}`}</p>
     </div>
     </div>
     <div id="discription" className={`${Heros[currentHero+1].color}`}>
         <div id="text">
         <ul>
-            <li>{getName(currentHero)}</li>
             <li>{getName(currentHero)}</li>
             <li>{getName(currentHero)}</li>
             <li>{getName(currentHero)}</li>
